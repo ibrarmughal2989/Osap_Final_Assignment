@@ -1,16 +1,131 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Favorite Song</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>My Favorite Song</h1>
+    <header>
+        <nav class="navbar">
 
-    <p>
-        Welcome to my website. This page is about one of my favorite songs.
-    </p>
+            <div class="logo">
+                Musicwithibrar
+            </div>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">Welcome to my website</p>
+
+                <h1>
+                    My Favorite
+                    <span>Song</span>
+                </h1>
+
+                <p class="description">
+                    Music is one of the best ways to relax and enjoy the moment.
+                    This webpage shows one of my favorite songs.
+                </p>
+
+                <a href="#video" class="btn">
+                    Watch Video
+                </a>
+
+            </div>
+
+
+            <div class="music-card">
+
+                <div class="music-icon">
+                    ♪
+                </div>
+
+                <h2>Enjoy The Music</h2>
+
+                <p>
+                    Listen, relax and enjoy your favorite song.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="video-section" id="video">
+
+            <p class="small-title">Featured Video</p>
+
+            <h2>My Favorite Song</h2>
+
+            <p class="video-text">
+                Watch one of my favorite music videos below.
+            </p>
+
+
+            <div class="video-box">
+
+                <!--
+    Apna YouTube iframe yahan paste karna hai.
+
+    Example:
+
+    <iframe
+        src="YOUR-YOUTUBE-EMBED-LINK"
+        title="YouTube video"
+        allowfullscreen>
+    </iframe>
+
+    -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SmM0653YvXU?si=jiIAXVr7NeyQNkVC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="video-placeholder">
+
+                    <div class="play-icon">
+                        ▶
+                    </div>
+
+                    <p>Your YouTube Video Will Appear Here</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            copyright©ibrarali 2026 My Favorite Song Website
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
